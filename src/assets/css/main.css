@@ -1,0 +1,167 @@
+/* 阿里巴巴矢量图 */
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:26px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* reset museUi 主灰:#202020 浅灰:#A6A1A7 #7A7A7A  边线:#F3F3F3*/
+body{ background-color: #FFFFFF; font-size: 12px; font-family: "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif; color: #202020; font-weight: 500;}
+a{color: #202020;}
+ul,li{ padding: 0; margin: 0; list-style: none;}
+p{ margin: 0;}
+.mu-appbar{ position: fixed; top: 0; height: 65px; padding-top: 20px; z-index: 100000; box-shadow: none; background: #FFFFFF;}
+.mu-appbar-left{ margin-right: 0;}
+.mu-appbar-title{margin-left: -48px; font-size: 18px; height: 50px; line-height: 50px; padding: 2px 0 0 0; text-align: center;}
+.mu-appbar .mu-icon-button{ padding: 0;}
+.mu-appbar .iconfont{ margin-top: 6px;}
+
+.mu-input{ width: 100%;}
+.mu-input-label{ color: #202020;}
+.mu-input__focus,.mu-input__focus .mu-input-label{ color: #4071FF;}
+.mu-form-item-label{color: #202020; font-size: 14px;}
+.mu-form-item__focus,.mu-form-item__focus .mu-form-item-label{ color: #4071FF;}
+.mu-form-item .mu-button{ margin: 10px 0 0;}
+.mu-form-item-content button{ width: 100%;}
+.mu-raised-button .mu-button-wrapper{ padding: 0 8px;}
+.mu-bottom-nav{ position: fixed; width: 100%; height: 50px; bottom: 0; left: 0; border-top: solid 1px #f4f4f4;}
+.mu-bottom-nav a{ color: #A6A1A7; line-height: 24px; padding-top: 5px;}
+.mu-bottom-nav a i{ font-size: 24px;}
+.mu-bottom-item{ padding: 0; min-width: auto;}
+.mu-bottom-item-text{ margin-top: -8px; font-size: 11px;}
+.mu-bottom-nav-shift-wrapper{ padding: 0 2%;}
+/* iphoneX、iphoneXs */
+@media only screen and (device-width: 375px) and (device-height: 812px){
+    .mu-appbar{padding-top: 35px; height: 85px;}
+    .mu-bottom-nav{ height: 60px;}
+}
+/* iphone Xs Max */
+@media only screen and (device-width: 414px) and (device-height: 896px){
+    .mu-appbar{padding-top: 35px; height: 85px;}
+    .mu-bottom-nav{ height: 60px;}
+}
+/* iphone XR */
+@media only screen and (device-width: 414px) and (device-height: 896px){
+    .mu-appbar{padding-top: 35px; height: 85px;}
+    .mu-bottom-nav{ height: 60px;}
+}
+.container{ padding: 0;}
+.mu-tab{ min-width: auto;}
+.mu-tab-active{ color: #2A2D2D;}
+.mu-table-header,.mu-table-body{ width: 100%!important;}
+.mu-table table{ table-layout: auto;}
+.mu-table tr.is-stripe{ background: #F7F7F7;}
+.mu-table th.is-sortable:hover{ color: #4071FF;}
+.mu-table td{ padding: 0 12px;}
+.mu-input.is-solo{ padding-bottom: 0; padding-top: 5px;}
+.mu-select-input.is-break{ text-align: right;}
+.mu-snackbar-message{ width: 100%; justify-content: center;}
+.mu-item.has-avatar{ height: 50px;}
+.mu-table th.is-sorting{ color: #4071FF;}
+.mu-dialog{ border-radius: 5px;}
+.mu-raised-button{ border-radius: 5px;}
+.mu-text-field-multiline textarea{ padding: 12px;}
+.mu-dialog{ font-size: 14px;}
+.mu-dialog-body{ padding:20px 20px; }
+.mu-dialog .mu-dialog-body{ position: relative;}
+.mu-input{ font-size: 16px;}
+.mu-snackbar{ top:46%; width: 60%; left: 20%; padding: 0 8px; min-width: auto; border-radius: 8px; min-height: auto; background-color: #202020;}
+.mu-divider{ height: 4px; background-color: #f3f3f3;}
+.mu-circle-spinner{ color: #4071FF;}
+.mu-secondary-text-color{ color: #7a7a7a;}
+.mu-text-field-input{ opacity: 0.9; }
+.mu-tabs .mu-tab-wrapper{ font-size: 15px;}
+/* 下拉框重置样式 */
+.select-reset{ font-size: 11px; min-height: auto; padding: 0; margin: 0; width: auto;}
+.select-reset .mu-input-line,.select-reset .mu-input-focus-line{ display: none;}
+.select-reset .mu-select-action{ padding: 0;}
+/* 底部仿原生弹出样式 */
+.mu-bottom-sheet{ margin: 15px; border-radius: 5px; background: none;}
+.mu-bottom-sheet ul li{  border-bottom: solid 1px #F1F1F1; background: #fff; padding: 0 16px;}
+.mu-bottom-sheet ul li:first-of-type{ border-radius: 5px 5px 0 0;}
+.mu-bottom-sheet ul li:nth-last-of-type(2){ border-radius: 0 0 5px 5px;}
+.mu-bottom-sheet ul li:last-of-type{ margin-top: 10px; border-radius: 5px;}
+.mu-bottom-sheet ul li .mu-item-title{ text-align: center;}
+/* 路由激活样式 */
+.router-link-active .icon,.router-link-active span{ color: #4071FF;;}
+.mu-list{ overflow: auto;}
+/* 登陆注册忘记密码公共样式 */
+.logo{text-align: center; margin-top: 20px;}
+.logo img{ margin-top: 10px; width: 80px; height: 80px;}
+.login-content{ width: 100%; padding: 20px 40px 0 40px;}
+.login-bottom { font-size: 15px; text-align: center; color: #202325; padding-bottom: 20px;}
+.login-bottom span{ color: #4071FF; display: inline-block; margin: 0 10px;}
+.login-bottom a{color: #4071FF;}
+.resetPassword{ background-color: #F7F7F7; position: absolute; top: 0; left: 0;}
+.mu-switch-checked{color: #4071FF;}
+/* 表单公共样式 */
+.form-content,.card-content{ padding: 20px 10%; background-color: #fff;}
+.form-content .mu-form-item-content .btn, .card-content button{ margin: 30px 0 0 0; }
+.form-tip{ padding: 35px; color: #585858;}
+.form-tip .title{ color: #070812; font-size: 15px;}
+.myCenter .mu-item{ padding: 0;}
+.common-btn{height: 42px; border-radius: 5px; font-size: 16px; background:#4071FF; box-shadow:0px 4px 8px 0px rgba(13,23,51,0.16); line-height: 42px; color: #FFFFFF;}
+/* 无数据展示 */
+.no-data{ text-align: center; font-size: 18px; margin-top: 40px; color: #7A7A7A;}
+/* 轮播指示器reset */
+.mu-carousel{ top: 0; left: 0; position: relative;}
+.mu-carousel-item{ top: 0}
+.mu-carousel-indicators{ height: auto;}
+.mu-carousel-indicator-button{ margin: 0; width: 16px;}
+.mu-carousel-indicator-icon{ border-radius: 0; width: 5px; height: 5px; border-radius: 50%; }
+/* tab reset */
+.mu-tabs{ background: none; color: #202020;}
+.mu-tab-link-highlight { height: 1px; background-color:#4071FF;} 
+.mu-tab-active{ color:#4071FF;}
+.mu-input-line.disabled{ border-bottom: solid 1px rgba(0,0,0,.12);}
+
+/* 进度条 */
+.progress{ width: 100%; display: flex;}
+.progress .title{ width: 30%;}
+.align-items-start{ width: 70%; margin-top: 6px; display: flex; flex-wrap: wrap;}
+.align-items-start .number{display: flex; width: 100%; justify-content: space-between;}
+.mu-linear-progress.mu-secondary-color .mu-linear-progress-background{ background-color:#AAAAAA; opacity: 1;}
+.mu-linear-progress.mu-secondary-color .mu-linear-progress-determinate{ background-color: #4071FF;}
+
+/* common-dialog */
+.common-dialog .mu-dialog-body{ font-size: 15px; color: #191918; border-bottom: solid 1px #f3f3f3; }
+.common-dialog .mu-dialog-body .mu-input-focus-line{ display: none;}
+.common-dialog .mu-dialog-body input{ text-align: center;}
+.common-dialog .mu-dialog-body .mu-input { border:1px solid #f3f3f3; border-radius: 5px; margin: 10px 0 0 0; padding-bottom: 0; padding-top: 6px;}
+.common-dialog .mu-dialog-body .mu-input-line{ display: none;}
+.common-dialog .mu-dialog-actions{ padding: 0 10%; display: flex; justify-content: space-between; }
+.common-dialog .mu-dialog-actions button{ font-size: 15px;}
+.common-dialog .tip{ display: inline-block; width: 100%; font-size: 10px; text-align: center; color: #ED2B36;}
+.mu-primary-text-color{ color:#4071FF;}
+.common-dialog input{ color: #2a2a2a;}
+.mu-dialog-actions { position: relative;} 
+.mu-dialog-actions::after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; border-left: solid 1px #f3f3f3;} 
+
+/* 省市区 */
+.distpicker-address-wrapper{ width: 100%; top: 320px; overflow: auto;  background: #fff;}
+.distpicker-address-wrapper select{ margin-top: 10px; font-size:14px; padding: 2px 6px; height: 36px; width: 32%;}
+
+/* 交易 */
+.share .mu-appbar{ background: none; border: 0;}
+.deal .mu-tab-wrapper{ min-height: auto; height: 30px; padding: 0;}
+.deal .mu-tab-link-highlight{ display: none;}
+.deal-form{ margin-top: 10px;}
+.deal-form .mu-form-item{ padding: 12px 4%; margin-bottom: 0;}
+.deal-form .mu-input{ padding: 0 10px; height: 46px;  background: #F5F7FA; border-radius:5px;}
+.deal-form .mu-input-line, .deal-form .mu-input-focus-line { display: none; }
+.deal-form .mu-form-item-help{ left: 25px!important;}
+
+/* 滑块样式 */
+.drag_verify{ border-radius: 5px!important;}
+.dv_handler{ width: 42px!important; height: 42px!important; border-radius: 5px!important;}
+.dv_progress_bar{ border-radius: 5px 0px 0px 5px!important; }

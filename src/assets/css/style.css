@@ -1,0 +1,250 @@
+@import 'http://fonts.googleapis.com/css?family=Noto+Sans';
+#chatRobot {
+    background-color: #101d2b;
+    width: 100%;
+    position: relative;
+}
+
+.talk-wrapper {
+    height: 100%;
+    background-color: #101d2b;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: -webkit-linear-gradient(#183859 0%, #22254c 100%);
+    background: -moz-linear-gradient(#183859 0%, #22254c 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#header {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+#header p {
+    font-size: 30px;
+    position: relative;
+    right: 20%;
+    color: rgba(25, 147, 147, 0.7);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(25, 147, 147, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(25, 147, 147, 0.2);
+}
+
+.chat_thread {
+    margin: 24px auto 0 auto;
+    padding: 0 20px 0 0;
+    list-style: none;
+    height: 450px;
+}
+
+.chat_thread li {
+    position: relative;
+    clear: both;
+    display: inline-block;
+    padding: 16px 40px 16px 20px;
+    margin: 0 0 20px 0;
+    font: 16px/20px 'Noto Sans', sans-serif;
+    border-radius: 10px;
+    background-color: rgba(25, 147, 147, 0.2);
+}
+
+.chat_thread li:before {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    content: '';
+}
+
+.chat_thread li:after {
+    position: absolute;
+    top: 10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid rgba(25, 147, 147, 0.2);
+}
+
+.chat_thread .agent {
+    animation: show-chat-even 0.5s 1 ease-in;
+    -moz-animation: show-chat-even 0.5s 1 ease-in;
+    -webkit-animation: show-chat-even 0.5s 1 ease-in;
+    float: left;
+    margin-left: 50px;
+    color: #ecf0f3;
+    text-align: left;
+}
+
+.chat_thread .agent::before {
+    left: -50px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.chat_thread .agent:after {
+    border-left: 15px solid transparent;
+    left: -15px;
+}
+
+.chat_thread .human {
+    animation: show-chat-odd 0.5s 1 ease-in;
+    -moz-animation: show-chat-odd 0.5s 1 ease-in;
+    -webkit-animation: show-chat-odd 0.5s 1 ease-in;
+    float: right;
+    margin-right: 50px;
+    color: #0AD5C1;
+    text-align: left;
+}
+
+.chat_thread .human:after {
+    border-right: 15px solid transparent;
+    right: -15px;
+}
+
+.chat_thread .human:before {
+    background-image: url('../../assets/human_50.png');
+    right: -50px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#foot {
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    height: 58px;
+    margin: 20px auto 0 auto;
+    width: 90%;
+}
+
+#message {
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 35px;
+    color: #0AD5C1;
+    background-color: rgba(25, 147, 147, 0.2);
+    border: none;
+    position: relative;
+    right: 0%;
+    padding-left: 10px;
+    width: 100%;
+}
+
+#postMessage {
+    background-color: rgba(25, 147, 147, 0.2);
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    position: relative;
+    right: 0%;
+    color: #0AD5C1;
+    outline: none;
+    width: 80px;
+    top: 0;
+    height: 35px;
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    #convo {
+        width: 90%;
+        height: 465px;
+        margin: auto;
+        text-align: center;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #convo {
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        text-align: center;
+        overflow: auto;
+    }
+    .chat_thread {
+        height: auto;
+    }
+}
+
+
+/*iphone 6 plus*/
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    .chat_thread {
+        height: 520px;
+    }
+    #convo {
+        height: 530px;
+    }
+}
+
+
+/*iphone x*/
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .chat_thread {
+        height: 580px;
+    }
+    #convo {
+        height: 590px;
+    }
+}
+
+@media only screen and (device-width: 411px) and (device-height: 731px) {
+    .chat_thread {
+        height: 510px;
+    }
+    #convo {
+        height: 520px;
+    }
+}
+
+@media only screen and (device-width: 411px) and (device-height: 823px) {
+    .chat_thread {
+        height: 700px;
+    }
+    #convo {
+        height: 620px;
+    }
+}
+
+
+/*iphone 5*/
+
+@media only screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+    .chat_thread {
+        height: 350px;
+    }
+    #message {
+        width: 70%;
+    }
+    #convo {
+        height: 320px;
+    }
+}
